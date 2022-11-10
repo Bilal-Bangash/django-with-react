@@ -6,8 +6,6 @@ import products from '../products'
 
 function ProductScreen(props) {
   const { id } = useParams()
-  console.log('%cid','color:red;font-size:50px',id)
-  console.log('id', id)
   const product = products.find((p) => p._id === id)
   return (
     <div>
